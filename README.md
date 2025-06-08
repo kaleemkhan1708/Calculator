@@ -8,8 +8,6 @@ A modern, responsive calculator built using **HTML**, **CSS**, and **JavaScript*
 
 🔗 [View Calculator](https://kaleemkhan1708.github.io/Calculator/calculator/)
 
----
-
 
 ---
 
@@ -38,7 +36,6 @@ A modern, responsive calculator built using **HTML**, **CSS**, and **JavaScript*
 ## 📌 How to Use
 
 1. Open the `index.html` file in a web browser  
-2. Or visit the [live demo link](https://kaleemkhan1708.github.io/calculator/)
 
 
 ---
