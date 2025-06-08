@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+
+.background-animation {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #0fffc1, #7e0fff, #0fffc1, #ff00d4);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  z-index: 0;
+  filter: blur(80px);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.calculator {
+  position: relative;
+  z-index: 1;
+  width: 340px;
+  background: rgba(0, 255, 238, 0);
+  border-radius: 25px;
+  backdrop-filter: blur(20px);
+  padding: 25px 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.display {
+  background: rgba(0, 0, 0, 0.5);
+  color: #0fffc1;
+  font-size: 2.5rem;
+  padding: 20px;
+  text-align: right;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  box-shadow: inset 0 0 10px rgba(0,255,255,0.4);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 1.4rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.op {
+  background: rgba(255, 0, 140, 0.2);
+  color: #ff6ec7;
+  box-shadow: 0 0 15px rgba(255, 0, 140, 0.2);
+}
+
+.op:hover {
+  box-shadow: 0 0 20px rgba(255, 0, 140, 0.6);
+}
+
+.equal {
+  background: #00ffab;
+  color: black;
+  grid-column: span 1;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 171, 0.6);
+}
+
+.equal:hover {
+  background: #1affbb;
+}
+
+.zero {
+  grid-column: span 2;
+  border-radius: 20px;
+}
