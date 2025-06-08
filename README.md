@@ -6,7 +6,7 @@ A modern, responsive calculator built using **HTML**, **CSS**, and **JavaScript*
 
 ## 🌐 Live Demo
 
-🔗 [View Calculator]((https://kaleemkhan1708.github.io/Calculator/calculator/))
+🔗 [View Calculator](https://kaleemkhan1708.github.io/Calculator/calculator/)
 
 ---
 
